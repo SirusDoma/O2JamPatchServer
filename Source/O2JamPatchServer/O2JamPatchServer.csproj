@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <InvariantGlobalization>true</InvariantGlobalization>
+        <Configurations>Debug;Release</Configurations>
+        <AssemblyName>O2JamPatchServer</AssemblyName>
+        <RootNamespace>O2JamPatchServer</RootNamespace>
+        <OutputPath>..\..\Build\$(Configuration)\O2JamPatchServer\</OutputPath>
+        <Platforms>x86;x64</Platforms>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Encore" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Ini" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" />
+        <PackageReference Include="System.CommandLine" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="config.ini">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+</Project>
