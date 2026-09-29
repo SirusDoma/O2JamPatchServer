@@ -43,7 +43,9 @@ Before publishing anything, configure:
 
 ## Running the launcher
 
-`O2Jam.exe` takes the leading launch arguments of `OTwo.exe`, as documented in Mozart.Encore. The music FTP location and the game servers are left out, since the patcher gets them from this server. The launcher also takes a restart counter; pass `0` for initial run.
+`O2Jam.exe` takes the leading launch arguments of `OTwo.exe`, as documented in Mozart.Encore below.  
+
+The music FTP location and the game servers are left out, since the patcher gets them from this server. The launcher also takes a restart counter; pass `0` for initial run.
 
 | Client                | Launcher arguments                                                                   | Reference `OTwo.exe` arguments                                                                            |
 |-----------------------|--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
