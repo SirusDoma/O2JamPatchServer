@@ -41,6 +41,15 @@ Before publishing anything, configure:
 - The four versions in `Patch` to the versions of the client you distribute. Then publish your existing patch files (see [Examples](#examples)).
 - `Gateway` to your game servers.
 
+## Running the launcher
+
+`O2Jam.exe` takes the leading launch arguments of `OTwo.exe`, as documented in Mozart.Encore. The music FTP location and the game servers are left out, since the patcher gets them from this server. The launcher also takes a restart counter; pass `0` for initial run.
+
+| Client                | Launcher arguments                                                                   | Reference `OTwo.exe` arguments                                                                            |
+|-----------------------|--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| Old O2Jam (e-Games)   | `O2Jam.exe <token> 0`                                                                | [Amadeus.Encore](https://github.com/SirusDoma/Mozart.Encore/tree/main/Source/Amadeus#service-discovery)   |
+| Newer O2Jam (O2JamO2) | `O2Jam.exe <mode> <user_index_id> <user_id> <password> O2Jam <gender> 0 <rank>`      | [Identity.Encore](https://github.com/SirusDoma/Mozart.Encore/tree/main/Source/Identity#service-discovery) |
+
 ## Build
 
 Install the .NET 10 SDK, then run these commands from the repository root:
